@@ -8,7 +8,7 @@ import (
 
 func main() {
 	r := gin.Default()
-
+	r.Static("img", "../../static/img")
 	r.Static("css", "../../static/css")
 	r.LoadHTMLGlob("../../static/*.html")
 
